@@ -86,17 +86,16 @@ $ npm start
 - [Linkedin](https://linkedin.com/in/maksimsologubov "Welcome")
 - [CV](http://cvmkr.com/KQFg "My CV")
 
-![Contacts App](Login_form.png "Contacts App")
 ## Login form
-![Contacts App](Registration_form.png "Contacts App")
+![Contacts App](Login_form.png "Contacts App")
 ## Registration form
-![Contacts App](Admin_panel.png "Contacts App")
+![Contacts App](Registration_form.png "Contacts App")
 ## Admin panel
-![Contacts App](User_panel.png "Contacts App")
+![Contacts App](Admin_panel.png "Contacts App")
 ## User panel
-![Contacts App](Blocked_user_panel.png "Contacts App")
+![Contacts App](User_panel.png "Contacts App")
 ## Blocked user panel
-
+![Contacts App](Blocked_user_panel.png "Contacts App")
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
