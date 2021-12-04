@@ -87,15 +87,15 @@ $ npm start
 - [CV](http://cvmkr.com/KQFg "My CV")
 
 ![Contacts App](Login_form.png "Contacts App")
-## Login_form
+## Login form
 ![Contacts App](Registration_form.png "Contacts App")
-## Registration_form
-![Contacts App](Admin panel.png "Contacts App")
-## Admin_panel
-![Contacts App](User panel.png "Contacts App")
-## User_panel
-![Contacts App](Blocked user panel.png "Contacts App")
-## Blocked_user_panel
+## Registration form
+![Contacts App](Admin_panel.png "Contacts App")
+## Admin panel
+![Contacts App](User_panel.png "Contacts App")
+## User panel
+![Contacts App](Blocked_user_panel.png "Contacts App")
+## Blocked user panel
 
 
 ## License
