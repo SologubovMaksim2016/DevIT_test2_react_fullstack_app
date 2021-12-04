@@ -91,11 +91,11 @@ $ npm start
 ![Contacts App](Registration_form.png "Contacts App")
 ## Registration_form
 ![Contacts App](Admin panel.png "Contacts App")
-## Admin panel
+## Admin_panel
 ![Contacts App](User panel.png "Contacts App")
-## User panel
+## User_panel
 ![Contacts App](Blocked user panel.png "Contacts App")
-## Blocked user panel
+## Blocked_user_panel
 
 
 ## License
