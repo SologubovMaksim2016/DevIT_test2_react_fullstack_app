@@ -1,0 +1,19 @@
+
+.table{
+  margin: top 30px !important;
+
+  font-weight: 600!important;
+  font-size: 26px!important;
+}
+.col_name{
+  height: 50px!important;
+  line-height: 50px!important;
+  border: 1px solid grey!important;
+  text-align: center!important;
+}
+.data{
+  height: 50px!important;
+  line-height: 50px!important;
+  border: 1px solid grey!important;
+  text-align: center!important;
+}

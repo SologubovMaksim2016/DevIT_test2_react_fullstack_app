@@ -1,0 +1,13 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "client": "npm run start --prefix client",
+    "server": "npm run start --prefix server",
+    "start": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "concurrently": "^6.4.0"
+  }
+}

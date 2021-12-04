@@ -1,0 +1,25 @@
+
+.title{
+  margin: 40px auto !important;
+  font-weight: 700!important;
+  font-size: 40px!important;
+}
+.paper {
+  margin-top: 50px!important;
+  display: flex!important;
+  flex-direction: column!important;
+  align-items: center!important;
+}
+.avatar {
+  margin: 40px auto!important;
+  background-color: grey!important;
+}
+.form {
+  width: 100%!important;
+  margin-top: 10px!important;
+}
+.submit {
+  margin-top: 30px!important;
+  margin-bottom: 10px!important;
+}
+

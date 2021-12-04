@@ -1,0 +1,5 @@
+{
+    "serverPort" : 5000,
+    "secretKey": "my-small-secket",
+    "dbUrl": "mongodb+srv://maks_simm:ha3aQ2u6m5KHtgX@cluster0.5i8uj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+}
