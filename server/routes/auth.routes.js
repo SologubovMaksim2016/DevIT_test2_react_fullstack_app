@@ -10,7 +10,7 @@ const {
 } = require("express-validator")
 const router = new Router()
 const authMiddleware = require('../middleware/auth.middleware')
-const corsMiddleware = require('./middleware/cors.middleware')
+const corsMiddleware = require('../middleware/cors.middleware')
 /**
  *    @swagger 
  * /auth/registration:
