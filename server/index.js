@@ -1,5 +1,4 @@
 const express = require("express")
-const cors = require('cors')
 const mongoose = require("mongoose")
 const config = require("config")
 const bodyParser = require("body-parser")
@@ -41,7 +40,6 @@ const specs = swaggerJsdoc({
     ],
 });
 
-app.use(cors());
 app.use(corsMiddleware)
 app.use(express.json())
 app.use("/api/auth", authRouter)
