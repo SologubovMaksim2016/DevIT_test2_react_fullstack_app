@@ -189,7 +189,7 @@ router.post('/login',
                 id: user.id,
                 isAdmin: user.isAdmin,
             }, config.get("secretKey"), {
-                expiresIn: "1h"
+                expiresIn: "250h"
             })
             return res.json({
                 token,
