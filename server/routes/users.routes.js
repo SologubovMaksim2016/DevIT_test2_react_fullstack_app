@@ -11,6 +11,7 @@ const {
 } = require("express-validator")
 const router = new Router()
 const authMiddleware = require('../middleware/auth.middleware')
+const corsMiddleware = require('./middleware/cors.middleware')
 
 /**
 * @swagger
@@ -44,7 +45,7 @@ const authMiddleware = require('../middleware/auth.middleware')
  *                   type: boolean
  *                   example: true 
 */
-router.get("/", authMiddleware,
+router.get("/", authMiddleware, corsMiddleware,
     async (req, res) => {
         try {
             const users = await User.find({
@@ -98,7 +99,7 @@ router.get("/", authMiddleware,
  *                   type: boolean
  *                   example: true 
  */
-router.delete("/:id", authMiddleware,
+router.delete("/:id", authMiddleware, corsMiddleware,
 
     async (req, res) => {
         try {
@@ -159,7 +160,7 @@ router.delete("/:id", authMiddleware,
  *                   type: boolean
  *                   example: true 
  */
-router.put("/:id", authMiddleware,
+router.put("/:id", authMiddleware, corsMiddleware,
     [
         check('firstName', "Uncorrect name").isString().optional(),
         check('lastName', "Uncorrect lastname").isString().optional(),
