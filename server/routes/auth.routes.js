@@ -10,6 +10,7 @@ const {
 } = require("express-validator")
 const router = new Router()
 const authMiddleware = require('../middleware/auth.middleware')
+const corsMiddleware = require('./middleware/cors.middleware')
 /**
  *    @swagger 
  * /auth/registration:
@@ -55,7 +56,7 @@ const authMiddleware = require('../middleware/auth.middleware')
  *                   type: boolean
  *                   example: true 
  */
-router.post('/registration',
+router.post('/registration', corsMiddleware,
     [
         check('firstName', "Uncorrect name").isString(),
         check('lastName', "Uncorrect lastname").isString(),
@@ -164,7 +165,7 @@ router.post('/registration',
  *                          type: boolean
  *                          example: true
  */
-router.post('/login',
+router.post('/login', corsMiddleware,
     async (req, res) => {
         try {
             const {
@@ -209,7 +210,7 @@ router.post('/login',
             })
         }
     })
-router.get('/', authMiddleware,
+router.get('/', authMiddleware,  corsMiddleware,
     async (req, res) => {
         try {
             const user = await User.findOne({
