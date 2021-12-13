@@ -7,7 +7,6 @@ import SignUp from "./SignUp";
 import SignIn from "./SignIn";
 import { useHistory } from "react-router-dom";
 import { GoogleLogin } from 'react-google-login';
-import FacebookLogin from 'react-facebook-login';
 import {registration} from '../../store/asyncActions/registration'
 import {useDispatch} from 'react-redux'
 import {login} from '../../store/asyncActions/login'
@@ -35,11 +34,7 @@ const Auth = () => {
       password: googleId
     }))
   }
-
-  const responseFacebook = async (response) => {
-    console.log(response);
-  }
-
+  
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
@@ -103,21 +98,7 @@ const Auth = () => {
                 onFailure={responseGoogle}
                 cookiePolicy={'single_host_origin'}
               />
-            </Grid>
-            <Grid item style={{ 
-                    height: "25px",
-                    transform: "scale(1.5)" , 
-                    margin: "auto",
-                  }}>                 
-              <FacebookLogin
-                appId="967489527170190"
-                // autoLoad={true}
-                fields="name,email,picture"
-                callback={responseFacebook}
-                cssClass="my-facebook-button-class"
-                icon="fa-facebook"
-              />
-            </Grid>
+            </Grid>           
           </Grid>        
         </div>
       </div>
